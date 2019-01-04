@@ -1,0 +1,280 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>BolaVoli</title>
+<link rel="stylesheet" type="text/css" href="css/style2.css" />
+<style type="text/css">
+body,td,th {
+	font-family: "MS Serif", "New York", serif;
+}
+</style>
+
+
+  <link rel="stylesheet" href="jquery-ui.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+  #draggable { width: 200px; height: 200px; padding: 0.5em; }
+  </style>
+<script src="external/jquery/jquery.js"></script>
+<script src="jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#draggable" ).draggable();
+  } );
+  </script>
+  
+    <style>
+  #resizable { width: 100px; height: 100px; padding: 0.5em; }
+  #resizable h3 { text-align: center; margin: 0; }
+  </style>
+<script src="external/jquery/jquery.js"></script>
+<script src="jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#resizable" ).resizable();
+  } );
+  </script>
+  
+  <script src="external/jquery/jquery.js"></script>
+<script src="jquery-ui.js"></script>
+	<script>
+	$(function() {
+		$( "#accordion" ).accordion();
+	});
+	</script>
+    
+  <style>
+  #sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+  #sortable li { margin: 0 3px 3px 3px; padding: 0.4em; padding-left: 1.5em; font-size: 1.4em; height: 18px; }
+  #sortable li span { position: absolute; margin-left: -1.3em; }
+  </style>
+<script src="external/jquery/jquery.js"></script>
+<script src="jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#sortable" ).sortable();
+    $( "#sortable" ).disableSelection();
+  } );
+  </script>
+  
+  <style>
+  #feedback { font-size: 1.4em; }
+  #selectable .ui-selecting { background: #FECA40; }
+  #selectable .ui-selected { background: #F39814; color: white; }
+  #selectable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+  #selectable li { margin: 3px; padding: 0.4em; font-size: 1.4em; height: 18px; }
+  </style>
+<script src="external/jquery/jquery.js"></script>
+<script src="jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#selectable" ).selectable();
+  } );
+  </script>
+  
+<link rel="stylesheet" type="text/css" href="jquery-ui/jquery-ui.min.css" />
+<script type="text/javascript" src="external/jquery/jquery.js"></script>
+<script src="jquery-ui.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#dialog').dialog({autoOpen : False});
+	$('#bukaDialog').click(function(){
+		$('#dialog').dialog(open);
+	});
+});
+</script>
+  
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="container">
+		<header>BolaVoli.Com</header> <!--HTML5 -->
+		<nav> <!-- HTML 5 -->
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Artikel</a>
+                    <ul class="submenu">
+                        <li><a href="proliga.html">Trending Topik Bola Voli</a></li>
+                        <li><a href="jadwal.html">Jadwal Proliga 2019</a></li>
+                  </ul>
+                </li>
+                <li><a href="video.html.html">Video</a></li>
+                <li><a href="gambar.html">Gambar</a></li>
+            </ul>
+        </nav>
+
+<ol id="selectable">
+<ul id="sortable"
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Palembang Bank SumselBabel</li>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Jakarta Elektrik PLN</li>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Jakarta Pertamina Energi</li>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Popsivo Polwan</li>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Jakarta Garuda</li>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>BNI 46</li>
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Surabaya Bhayangkara Samator</li>
+    <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Sidoarjo Aneka Gas Industri</li>
+
+  <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Bandung BJB Pakuan</li>
+
+  </ul>
+</ol>
+
+
+<button id="bukaDialog">KLik Saya !</button>
+<div id="dialog" title="Volivers">
+	Halo! Salam Kenal Volivers..
+</div>
+
+<!-- Autocomplete -->
+<h2 class="demoHeaders">Pemain yang ikut di Proliga 2019</h2>
+<div>
+	<input id="autocomplete" title="type &quot;a&quot;">
+</div>
+<script src="external/jquery/jquery.js"></script>
+<script src="jquery-ui.js"></script>
+
+<script>
+var availableTags = [
+	"Nandita Ayu",
+	"Anna Stephanieuk",
+	"Megawati",
+	"Wilda",
+	"Rendy Tamamilang",
+	"Rivan Nur Mulki",
+	"Aji",
+	"Asih Titi",
+	"Aprilia Manganang",
+	"Amasya Manganang",
+	"Tasya",
+	"Ryno",
+	"Dimas Saputra",
+	"Shindy",
+	"Toiran",
+	"Leon",
+	"Agung Seganti",
+	"Millenia",
+	"Novia",
+];
+
+$( "#autocomplete" ).autocomplete({
+	source: availableTags
+});
+</script>
+     
+      
+    <div id="content">
+    <div id="accordion">
+        <h3>Sejarah Singkat Bola Voli</h3>
+        <div>
+            <p>Permainan bola voli  diciptakan oleh William C Morgan pada tahun 1895 di Holyoke (Amerika bagian timur). William C Morgan adalah seorang pembina pendidikan jasmani pada Young Man Christain Association (MCA).</p>
+            <p>Permainan bola voli di Amerika sangat cepat perkembangannya, sehingga pada tahun 1933 YMCA mengadakan kejuaraan bola voli  nasional. Kemudian permainan bola voli  ini menyebar ke seluruh dunia.</p>
+            <p>Pada tahun 1974 pertama kali bola voli  dipertandingkan di Polandia dengan peserta yang cukup banyak. Pada tahun 1984 didirikan Federasi Bola Voli  Internasional atau International Volley Ball Federation (IVBF) yang waktu itu beranggotakan 15 negara dan berkedudukan di Paris.</p>
+        </div>
+        
+        <h3>Proliga 2018-2019</h3>
+        <div>
+        <p>Yogyakarta kembali mendapat kepercayaan dari PP PBVSI untuk menjadi tuan rumah pembukaan kompetisi bola voli tertinggi di Indonesia yaitu Proliga 2019 yang akan diberlangsung di GOR Amongraga, Yogyakarta, 7-9 Desember 2018 mendatang.</p>
+                <p>Sebanyak 11 tim yang terbagi dalam dua ketegori, yakni putra dan putri bakal unjuk gigi pada kejuaraan bergengsi ini.</p>
+                <p>Keenam tim putra terdiri atas juara musim lalu Surabaya Bhayangkara Samator, Palembang Bank SumselBabel, Jakarta Pertamina Energi, Jakarta BNI 46, Sidoarjo Aneka Gas Industri, dan Jakarta Garuda.</p>
+                <p>Adapun tim putri yang akan mengikuti kompetisi yang memasuki tahun ke-18 itu yaitu Jakarta Pertamina Energi, Bandung Bank BJB Pakuan, Jakarta Elektrik PLN, Jakarta Popsivo Polwan, dan Jakarta BNI 46.</p>
+                <p>Sedangkan satu tim yang rutin berkompetisi di Proliga sejak 2002 silam, Gresik Petrokimia menyatakan mundur dengan alasan persiapan belum tuntas.</p>
+        </div>
+        
+        <h3>Jadwal Proliga 2018-2019</h3>
+        <div>
+        <p>Berikut jadwal pertandingan Proliga 2019 :</p>
+                  <p><b>Putaran 1</b></p>
+                  <p>Seri 1: Yogyakarta, 7-9 Desember</p>
+                  <p>Seri 2: Gresik 14-16 Desember</p>
+                  <p>Seri 3: Bandung 21-23 Desember</p>
+                  <p><b>Putaran 2</b></p>
+                  <p>Seri 1: Palembang 11-13 Januari 2019</p>
+                  <p>Seri 2: Pekanbaru, 18-20 Januari</p>
+                  <p>Seri 3: Solo 25-27 Januari</p>
+                  <p><b>Final</b></p>
+                  <p>Finalfour 1: Kediri 8-10 Februari</p>
+                  <p>Finalfour 2: Malang 15-17 Februari</p>
+                  <p>Final putri 23 Februari di Yogyakarta</p>
+                  <p>Final putra 24 Februari di Yogyakarta. </p>
+                  </p>
+        </div>
+    </div>
+	</div> <!-- tutup div content -->
+    
+		<div id="content">        
+            <div id="single">
+                <div id="draggable" class="ui-widget-content">
+                <div id="resizable" class="ui-widget-content">
+                    <h3>Sejarah Permainan Bola Voli</h3>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    
+    <h2>Ketetapan Jadwal Proliga 2019</h2>
+            <ul>
+            <li>
+                  <ul class="submenu">
+                        <li><a href="proliga.html">Trending Topik Bola Voli</a></li>
+                        <ul id="menu">
+                        <li><a href="jadwal.html">Jadwal Proliga 2019</a>
+                        	<li><div>Putaran 1</div></li>
+                            <li><div>Putaran 2</div></li>
+                            <li><div>Semifinal dan Final</div></li>
+                        </li>
+                        </ul>
+                  </ul>
+                </li>
+            </ul>
+
+
+        <div id="sidebar">
+        	<li class="widget">
+                <h2>Popular Post</h2>
+                <ul>
+                    <li><a href="#">Jadwal Putaran Reguler Proliga 2019</a></li><br />
+                    <li><a href="#">Siaran Pers PBVSI Mengenai Proliga 2019</a></li><br />
+                    <li><a href="#">Channel Live Streaming Proliga 2019</a></li><br />
+                </ul>
+            </li>
+            <li class="widget">
+                <h2>Commented Post</h2>
+                <ul>
+                    <li><a href="#">Proliga 2019 Bakalan Tayang Di Dua TV Nasional</a></li><br />
+                    <li><a href="#">Rendi dan Rivan Masih Menjadi Dua Bomber Utama Tim Surabaya Bhayangkara Samator</a></li><br />
+                    <li><a href="#">Aprilia Manganang Pindah Haluan Ke Jakarta Popsivo Polwan</a></li><br />
+                </ul>
+            </li>
+                <li class="widget">
+                <h2>Audio Streaming</h2>
+                <audio id="audio" src="audio/mars-pbvsi.m4a" controls></audio>
+            </li>
+        </div>
+        
+        <footer> <!--HTML5 -->
+            <div id="column">
+                <h2>Dapatkan Bantuan dan Dukungan</h2>
+                Untuk mendapatkan petunjuk atau dukungan dari kami, kunjungi situs <a
+                href="http://support.bolavoli.com">support.bolavoli.com</a> dan submit form
+                anda.
+            </div>
+            <div id="column">
+                <h2>Hubungi Kami</h2>
+                Jl. Karangbangun 18<br>
+                Karanganyar 3367 Jawa Tengah<br>
+                (+6221) 338876
+            </div>
+            <div id="column">
+                <h2>Temukan Kami di ...</h2>
+                <a href="http://facebook.com/volleyballsaccess">Facebook</a><br>
+                <a href="http://twitter.com/volleyballaccess">Twitter</a><br />
+                <a href="http://instagram.com/@volleyballaccess">Instagram</a>
+            </div>
+		</footer>
+	</div>
+</div>
+</body>
+</html>
